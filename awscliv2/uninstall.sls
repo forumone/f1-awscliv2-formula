@@ -8,7 +8,7 @@ aws_completer_absent:
 
 aws_cli_dir_absent:
   file.absent:
-    - name /usr/local/aws-cli/
+    - name: /usr/local/aws-cli/
 
 pkg.installed:
   - name: awscli
