@@ -8,7 +8,7 @@ extract_awscliv2_zip:
     - source: https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip
     - user: root
     - group: root
-    - source_hash: md5=f601eaab1ccd62bfac916f6fa66e561b
+    - source_hash: md5=db22984399ea0778dea604b2cafcecf7
 
 install_awscliv2:
   cmd.run:
