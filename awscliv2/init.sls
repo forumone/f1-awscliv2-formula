@@ -1,3 +1,7 @@
+uninstall_awscliv1:
+  pkg.removed:
+    - name: awscli
+    
 extract_awscliv2_zip:
   archive.extracted:
     - name: /tmp/awscliv2/
@@ -10,6 +14,7 @@ install_awscliv2:
   cmd.run:
     - name: /tmp/awscliv2/aws/install
     - requires:
+      - uninstall_awscliv1
       - extract_awscliv2_zip
 
 cleanup_install:
