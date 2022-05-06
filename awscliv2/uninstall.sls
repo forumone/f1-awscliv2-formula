@@ -10,9 +10,10 @@ aws_cli_dir_absent:
   file.absent:
     - name: /usr/local/aws-cli/
 
-pkg.installed:
-  - name: awscli
-  - requires:
-    - aws_absent
-    - aws_completer_absent
-    - aws_cli_dir_absent
+install_awscliv1:
+  pkg.installed:
+    - name: awscli
+    - requires:
+      - aws_absent
+      - aws_completer_absent
+      - aws_cli_dir_absent
